@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GillSans.ttc">
+            <string>GillSans</string>
+        </array>
+        <array key="beyond_the_mountains.otf">
+            <string>BeyondTheMountains</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Initial View Controller-->
+        <scene sceneID="ZcH-Hs-dOl">
+            <objects>
+                <viewController id="I3O-ae-Ktq" customClass="InitialViewController" customModule="Wandr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qIe-Wp-VhO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wandr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQi-14-bvq">
+                                <rect key="frame" x="15" y="20" width="345" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="sNm-xG-8k3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="68"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mX1-LL-Y9b" customClass="WandrButton" customModule="Wandr" customModuleProvider="target">
+                                <rect key="frame" x="75" y="512" width="225" height="40"/>
+                                <color key="backgroundColor" red="0.22352941176470587" green="0.23529411764705882" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="OGM-B0-5TA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signUpButtonTap:" destination="I3O-ae-Ktq" eventType="touchUpInside" id="klG-QA-nWQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsu-fG-rD0" customClass="WandrButton" customModule="Wandr" customModuleProvider="target">
+                                <rect key="frame" x="75" y="577" width="225" height="40"/>
+                                <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Sks-tT-VL1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonTap:" destination="I3O-ae-Ktq" eventType="touchUpInside" id="u94-oW-ZZG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BDa-RN-DEc" firstAttribute="trailing" secondItem="mX1-LL-Y9b" secondAttribute="trailing" constant="75" id="5DO-Uw-zC3"/>
+                            <constraint firstItem="yQi-14-bvq" firstAttribute="centerX" secondItem="qIe-Wp-VhO" secondAttribute="centerX" id="ACa-nw-Nr3"/>
+                            <constraint firstItem="yQi-14-bvq" firstAttribute="top" secondItem="BDa-RN-DEc" secondAttribute="top" id="EUl-e0-fu2"/>
+                            <constraint firstItem="BDa-RN-DEc" firstAttribute="trailing" secondItem="vsu-fG-rD0" secondAttribute="trailing" constant="75" id="Nap-EW-bQz"/>
+                            <constraint firstItem="mX1-LL-Y9b" firstAttribute="leading" secondItem="BDa-RN-DEc" secondAttribute="leading" constant="75" id="STf-h1-SYF"/>
+                            <constraint firstItem="BDa-RN-DEc" firstAttribute="bottom" secondItem="vsu-fG-rD0" secondAttribute="bottom" constant="50" id="Vbx-WK-7xr"/>
+                            <constraint firstItem="yQi-14-bvq" firstAttribute="leading" secondItem="BDa-RN-DEc" secondAttribute="leading" constant="15" id="b4T-8f-jKQ"/>
+                            <constraint firstItem="vsu-fG-rD0" firstAttribute="leading" secondItem="BDa-RN-DEc" secondAttribute="leading" constant="75" id="nbo-du-DNh"/>
+                            <constraint firstItem="BDa-RN-DEc" firstAttribute="trailing" secondItem="yQi-14-bvq" secondAttribute="trailing" constant="15" id="tDF-VV-PKH"/>
+                            <constraint firstItem="vsu-fG-rD0" firstAttribute="top" secondItem="mX1-LL-Y9b" secondAttribute="bottom" constant="25" id="xga-vj-th5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BDa-RN-DEc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7rV-6k-G7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2262" y="-582"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="H50-WY-uab">
+            <objects>
+                <viewController id="tnF-Rd-56V" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g5F-Ve-VyB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2M-9E-ci0">
+                                <rect key="frame" x="15" y="517" width="345" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="ADu-Ts-Wwv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="68"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ayN-i4-dB2">
+                                <rect key="frame" x="41" y="332.5" width="293" height="2"/>
+                                <color key="backgroundColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="0iI-ox-nfd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pTB-i4-Ml5" firstAttribute="bottom" secondItem="T2M-9E-ci0" secondAttribute="bottom" id="Eyt-DX-Aq7"/>
+                            <constraint firstItem="T2M-9E-ci0" firstAttribute="leading" secondItem="pTB-i4-Ml5" secondAttribute="leading" constant="15" id="Ha1-zd-bEv"/>
+                            <constraint firstItem="ayN-i4-dB2" firstAttribute="centerY" secondItem="g5F-Ve-VyB" secondAttribute="centerY" id="PrW-jD-Pe6"/>
+                            <constraint firstItem="ayN-i4-dB2" firstAttribute="leading" secondItem="g5F-Ve-VyB" secondAttribute="leadingMargin" constant="25" id="TiI-C4-ZDc"/>
+                            <constraint firstItem="pTB-i4-Ml5" firstAttribute="trailing" secondItem="T2M-9E-ci0" secondAttribute="trailing" constant="15" id="jRQ-RZ-Q2x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ayN-i4-dB2" secondAttribute="trailing" constant="25" id="jrq-pd-6wZ"/>
+                            <constraint firstItem="ayN-i4-dB2" firstAttribute="centerX" secondItem="g5F-Ve-VyB" secondAttribute="centerX" id="xRl-tU-e6h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pTB-i4-Ml5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ik-We-8Fc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1572" y="-582"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="GSG-u8-am5">
+            <objects>
+                <tabBarController id="kyd-Cd-8gy" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PF7-5w-oKJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BRr-Dx-Fzl" kind="relationship" relationship="viewControllers" id="uZ0-uD-1pz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Smd-yQ-Dl5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148" y="-582"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="QMB-5N-tlF">
+            <objects>
+                <tableViewController id="BRr-Dx-Fzl" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rRD-9r-wDX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Zy6-Zw-3EY">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zy6-Zw-3EY" id="85G-HS-Vtu">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BRr-Dx-Fzl" id="Khy-xS-dDc"/>
+                            <outlet property="delegate" destination="BRr-Dx-Fzl" id="AxK-i2-teP"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="Lfg-bQ-v6M"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="alQ-0K-c9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="570" y="-582"/>
+        </scene>
+    </scenes>
+</document>
