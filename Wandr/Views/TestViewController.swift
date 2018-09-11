@@ -1,18 +1,18 @@
 //
-//  LoadingViewController.swift
+//  TestViewController.swift
 //  Wandr
 //
-//  Created by Shane Nelson on 8/25/18.
+//  Created by Shane Nelson on 9/10/18.
 //  Copyright © 2018 Shane Nelson. All rights reserved.
 //
 
 import UIKit
 
-class LoadingViewController: UIViewController {
+class TestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("Success")
         // Do any additional setup after loading the view.
     }
 

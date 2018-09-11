@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		4295A56C925E238C56F00CA7 /* Pods_Wandr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251454E664465C599C0BA0BD /* Pods_Wandr.framework */; };
+		900CCE5B2147388D00D20C3E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900CCE5A2147388D00D20C3E /* MainViewController.swift */; };
+		900CCE5D21473C2700D20C3E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900CCE5C21473C2700D20C3E /* TestViewController.swift */; };
+		900CCE612147434B00D20C3E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900CCE5F2147434B00D20C3E /* TableViewCell.swift */; };
+		900CCE622147434B00D20C3E /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 900CCE602147434B00D20C3E /* TableViewCell.xib */; };
 		90CA28CE2131CD6200279A2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CA28CD2131CD6200279A2B /* AppDelegate.swift */; };
 		90CA28D32131CD6200279A2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90CA28D12131CD6200279A2B /* Main.storyboard */; };
 		90CA28D52131CD6200279A2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90CA28D42131CD6200279A2B /* Assets.xcassets */; };
 		90CA28D82131CD6200279A2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90CA28D62131CD6200279A2B /* LaunchScreen.storyboard */; };
 		90CA28E32131CD6200279A2B /* WandrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CA28E22131CD6200279A2B /* WandrTests.swift */; };
-		90CA28EE2131DC1400279A2B /* TripsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CA28ED2131DC1400279A2B /* TripsTableViewController.swift */; };
-		90CA28F62131DD8700279A2B /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CA28F42131DD8700279A2B /* LoadingViewController.swift */; };
-		90CA28F72131DD8700279A2B /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90CA28F52131DD8700279A2B /* LoadingViewController.xib */; };
 		90CA28F92132100000279A2B /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CA28F82132100000279A2B /* InitialViewController.swift */; };
 		90CA29002132117300279A2B /* beyond_the_mountains.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90CA28FC2132117300279A2B /* beyond_the_mountains.otf */; };
 		90CA29012132117300279A2B /* beyond_the_mountains.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90CA28FD2132117300279A2B /* beyond_the_mountains.ttf */; };
@@ -43,6 +44,10 @@
 		38A59BAF4F0B53EEEA1A1438 /* Pods-Wandr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wandr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wandr/Pods-Wandr.debug.xcconfig"; sourceTree = "<group>"; };
 		6A30DFFCB3A9CA8F5DB612BE /* Pods-Wandr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wandr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wandr/Pods-Wandr.release.xcconfig"; sourceTree = "<group>"; };
 		6CD8042AA7439FA77B212E21 /* Pods-WandrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WandrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WandrTests/Pods-WandrTests.release.xcconfig"; sourceTree = "<group>"; };
+		900CCE5A2147388D00D20C3E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		900CCE5C21473C2700D20C3E /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		900CCE5F2147434B00D20C3E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		900CCE602147434B00D20C3E /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		90CA28CA2131CD6200279A2B /* Wandr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wandr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90CA28CD2131CD6200279A2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90CA28D22131CD6200279A2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,9 +57,6 @@
 		90CA28DE2131CD6200279A2B /* WandrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WandrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90CA28E22131CD6200279A2B /* WandrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WandrTests.swift; sourceTree = "<group>"; };
 		90CA28E42131CD6200279A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		90CA28ED2131DC1400279A2B /* TripsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsTableViewController.swift; sourceTree = "<group>"; };
-		90CA28F42131DD8700279A2B /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
-		90CA28F52131DD8700279A2B /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
 		90CA28F82132100000279A2B /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		90CA28FC2132117300279A2B /* beyond_the_mountains.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beyond_the_mountains.otf; sourceTree = "<group>"; };
 		90CA28FD2132117300279A2B /* beyond_the_mountains.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beyond_the_mountains.ttf; sourceTree = "<group>"; };
@@ -108,6 +110,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		900CCE5E2147432D00D20C3E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				900CCE5F2147434B00D20C3E /* TableViewCell.swift */,
+				900CCE602147434B00D20C3E /* TableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		90CA28C12131CD6200279A2B = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +143,7 @@
 		90CA28CC2131CD6200279A2B /* Wandr */ = {
 			isa = PBXGroup;
 			children = (
+				900CCE5E2147432D00D20C3E /* Cells */,
 				90CA29042132128700279A2B /* Core */,
 				90CA28FA2132115100279A2B /* fonts */,
 				90CA28EF2131DC1A00279A2B /* Views */,
@@ -157,38 +169,12 @@
 		90CA28EF2131DC1A00279A2B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				90CA290D2132232E00279A2B /* Sign up View */,
-				90CA290821321BB400279A2B /* Log in View */,
+				90CA290B2132231700279A2B /* SignUpViewController.swift */,
 				90CA28F82132100000279A2B /* InitialViewController.swift */,
-				90CA28F22131DD5A00279A2B /* ReusableViews */,
-				90CA28F02131DC2600279A2B /* Trips View */,
+				900CCE5A2147388D00D20C3E /* MainViewController.swift */,
+				900CCE5C21473C2700D20C3E /* TestViewController.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		90CA28F02131DC2600279A2B /* Trips View */ = {
-			isa = PBXGroup;
-			children = (
-				90CA28ED2131DC1400279A2B /* TripsTableViewController.swift */,
-			);
-			path = "Trips View";
-			sourceTree = "<group>";
-		};
-		90CA28F22131DD5A00279A2B /* ReusableViews */ = {
-			isa = PBXGroup;
-			children = (
-				90CA28F32131DD6A00279A2B /* Loading View */,
-			);
-			path = "Reusable\U0010Views";
-			sourceTree = "<group>";
-		};
-		90CA28F32131DD6A00279A2B /* Loading View */ = {
-			isa = PBXGroup;
-			children = (
-				90CA28F42131DD8700279A2B /* LoadingViewController.swift */,
-				90CA28F52131DD8700279A2B /* LoadingViewController.xib */,
-			);
-			path = "Loading View";
 			sourceTree = "<group>";
 		};
 		90CA28FA2132115100279A2B /* fonts */ = {
@@ -224,21 +210,6 @@
 				90CA2906213212AF00279A2B /* IBDesignable.swift */,
 			);
 			path = IBDesignalbe;
-			sourceTree = "<group>";
-		};
-		90CA290821321BB400279A2B /* Log in View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Log in View";
-			sourceTree = "<group>";
-		};
-		90CA290D2132232E00279A2B /* Sign up View */ = {
-			isa = PBXGroup;
-			children = (
-				90CA290B2132231700279A2B /* SignUpViewController.swift */,
-			);
-			path = "Sign up View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,9 +305,9 @@
 				90CA28D52131CD6200279A2B /* Assets.xcassets in Resources */,
 				90CA29012132117300279A2B /* beyond_the_mountains.ttf in Resources */,
 				90CA29032132117300279A2B /* Read Me.rtf in Resources */,
+				900CCE622147434B00D20C3E /* TableViewCell.xib in Resources */,
 				90CA29002132117300279A2B /* beyond_the_mountains.otf in Resources */,
 				90CA28D32131CD6200279A2B /* Main.storyboard in Resources */,
-				90CA28F72131DD8700279A2B /* LoadingViewController.xib in Resources */,
 				90CA29022132117300279A2B /* beyond_the_mountains.png in Resources */,
 				90CA291121322ADF00279A2B /* GoogleService-Info.plist in Resources */,
 			);
@@ -462,11 +433,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				90CA290C2132231700279A2B /* SignUpViewController.swift in Sources */,
-				90CA28EE2131DC1400279A2B /* TripsTableViewController.swift in Sources */,
 				90CA28CE2131CD6200279A2B /* AppDelegate.swift in Sources */,
-				90CA28F62131DD8700279A2B /* LoadingViewController.swift in Sources */,
 				90CA2907213212AF00279A2B /* IBDesignable.swift in Sources */,
 				90CA28F92132100000279A2B /* InitialViewController.swift in Sources */,
+				900CCE5D21473C2700D20C3E /* TestViewController.swift in Sources */,
+				900CCE612147434B00D20C3E /* TableViewCell.swift in Sources */,
+				900CCE5B2147388D00D20C3E /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

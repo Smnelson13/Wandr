@@ -21,9 +21,6 @@ class InitialViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func signUpButtonTap(_ sender: Any) {
-    }
-    
     @IBAction func loginButtonTap(_ sender: Any) {
     }
     
