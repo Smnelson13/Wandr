@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4295A56C925E238C56F00CA7 /* Pods_Wandr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251454E664465C599C0BA0BD /* Pods_Wandr.framework */; };
-		900CCE612147434B00D20C3E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900CCE5F2147434B00D20C3E /* TableViewCell.swift */; };
-		900CCE622147434B00D20C3E /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 900CCE602147434B00D20C3E /* TableViewCell.xib */; };
 		9090C8AB214DA862007C07E9 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9090C8A9214DA862007C07E9 /* TripTableViewCell.swift */; };
 		9090C8AC214DA862007C07E9 /* TripTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9090C8AA214DA862007C07E9 /* TripTableViewCell.xib */; };
 		9090C8BA214F36D6007C07E9 /* Merriweather-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9090C8B1214F36D6007C07E9 /* Merriweather-Bold.ttf */; };
@@ -48,14 +46,11 @@
 		90CA28D82131CD6200279A2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90CA28D62131CD6200279A2B /* LaunchScreen.storyboard */; };
 		90CA28E32131CD6200279A2B /* WandrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CA28E22131CD6200279A2B /* WandrTests.swift */; };
 		90CA28F92132100000279A2B /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CA28F82132100000279A2B /* InitialViewController.swift */; };
-		90CA29002132117300279A2B /* beyond_the_mountains.otf in Resources */ = {isa = PBXBuildFile; fileRef = 90CA28FC2132117300279A2B /* beyond_the_mountains.otf */; };
-		90CA29012132117300279A2B /* beyond_the_mountains.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90CA28FD2132117300279A2B /* beyond_the_mountains.ttf */; };
-		90CA29022132117300279A2B /* beyond_the_mountains.png in Resources */ = {isa = PBXBuildFile; fileRef = 90CA28FE2132117300279A2B /* beyond_the_mountains.png */; };
-		90CA29032132117300279A2B /* Read Me.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 90CA28FF2132117300279A2B /* Read Me.rtf */; };
 		90CA2907213212AF00279A2B /* IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CA2906213212AF00279A2B /* IBDesignable.swift */; };
 		90CA290C2132231700279A2B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CA290B2132231700279A2B /* SignUpViewController.swift */; };
 		90CA290F21322A1800279A2B /* GoogleService-Info-4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90CA290E21322A1800279A2B /* GoogleService-Info-4.plist */; };
 		90CA291121322ADF00279A2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90CA291021322ADF00279A2B /* GoogleService-Info.plist */; };
+		90DEB07821507DA0005B4EA9 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DEB07721507DA0005B4EA9 /* DiscoverTableViewController.swift */; };
 		94C2848C1002EADBC0DFAD09 /* Pods_WandrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EEA8804D3801D4F6E371D0 /* Pods_WandrTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,8 +69,6 @@
 		38A59BAF4F0B53EEEA1A1438 /* Pods-Wandr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wandr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wandr/Pods-Wandr.debug.xcconfig"; sourceTree = "<group>"; };
 		6A30DFFCB3A9CA8F5DB612BE /* Pods-Wandr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wandr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wandr/Pods-Wandr.release.xcconfig"; sourceTree = "<group>"; };
 		6CD8042AA7439FA77B212E21 /* Pods-WandrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WandrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WandrTests/Pods-WandrTests.release.xcconfig"; sourceTree = "<group>"; };
-		900CCE5F2147434B00D20C3E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		900CCE602147434B00D20C3E /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		9090C8A9214DA862007C07E9 /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
 		9090C8AA214DA862007C07E9 /* TripTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripTableViewCell.xib; sourceTree = "<group>"; };
 		9090C8B1214F36D6007C07E9 /* Merriweather-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Bold.ttf"; sourceTree = "<group>"; };
@@ -118,14 +111,11 @@
 		90CA28E22131CD6200279A2B /* WandrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WandrTests.swift; sourceTree = "<group>"; };
 		90CA28E42131CD6200279A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90CA28F82132100000279A2B /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
-		90CA28FC2132117300279A2B /* beyond_the_mountains.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beyond_the_mountains.otf; sourceTree = "<group>"; };
-		90CA28FD2132117300279A2B /* beyond_the_mountains.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beyond_the_mountains.ttf; sourceTree = "<group>"; };
-		90CA28FE2132117300279A2B /* beyond_the_mountains.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beyond_the_mountains.png; sourceTree = "<group>"; };
-		90CA28FF2132117300279A2B /* Read Me.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Read Me.rtf"; sourceTree = "<group>"; };
 		90CA2906213212AF00279A2B /* IBDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBDesignable.swift; sourceTree = "<group>"; };
 		90CA290B2132231700279A2B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		90CA290E21322A1800279A2B /* GoogleService-Info-4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-4.plist"; sourceTree = "<group>"; };
 		90CA291021322ADF00279A2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		90DEB07721507DA0005B4EA9 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
 		94D77FFCE2D4DE9CD0251357 /* Pods-WandrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WandrTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WandrTests/Pods-WandrTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4EEA8804D3801D4F6E371D0 /* Pods_WandrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WandrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -170,15 +160,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		900CCE5E2147432D00D20C3E /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				900CCE5F2147434B00D20C3E /* TableViewCell.swift */,
-				900CCE602147434B00D20C3E /* TableViewCell.xib */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
 		9090C8AD214DA874007C07E9 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				9090C8AF214F368B007C07E9 /* Fonts */,
+				9090C8EC214F3A6A007C07E9 /* Models */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -280,9 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				9090C8AE214F3685007C07E9 /* UI */,
-				900CCE5E2147432D00D20C3E /* Cells */,
 				90CA29042132128700279A2B /* Core */,
-				90CA28FA2132115100279A2B /* fonts */,
 				90CA28EF2131DC1A00279A2B /* Views */,
 				90CA28D12131CD6200279A2B /* Main.storyboard */,
 				90CA28D42131CD6200279A2B /* Assets.xcassets */,
@@ -308,34 +288,15 @@
 			children = (
 				9090C8EA214F392F007C07E9 /* TripTableViewController.swift */,
 				90CA290B2132231700279A2B /* SignUpViewController.swift */,
+				90DEB07721507DA0005B4EA9 /* DiscoverTableViewController.swift */,
 				90CA28F82132100000279A2B /* InitialViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		90CA28FA2132115100279A2B /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-				90CA28FB2132117300279A2B /* beyond_the_mountains */,
-			);
-			path = fonts;
-			sourceTree = "<group>";
-		};
-		90CA28FB2132117300279A2B /* beyond_the_mountains */ = {
-			isa = PBXGroup;
-			children = (
-				90CA28FC2132117300279A2B /* beyond_the_mountains.otf */,
-				90CA28FD2132117300279A2B /* beyond_the_mountains.ttf */,
-				90CA28FE2132117300279A2B /* beyond_the_mountains.png */,
-				90CA28FF2132117300279A2B /* Read Me.rtf */,
-			);
-			path = beyond_the_mountains;
-			sourceTree = "<group>";
-		};
 		90CA29042132128700279A2B /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				9090C8EC214F3A6A007C07E9 /* Models */,
 				9090C8AD214DA874007C07E9 /* Cells */,
 				90CA29052132129100279A2B /* IBDesignalbe */,
 			);
@@ -451,9 +412,7 @@
 				9090C8D9214F3700007C07E9 /* Montserrat-BoldItalic.ttf in Resources */,
 				9090C8C2214F36D6007C07E9 /* Merriweather-LightItalic.ttf in Resources */,
 				9090C8E8214F3700007C07E9 /* Montserrat-SemiBoldItalic.ttf in Resources */,
-				90CA29012132117300279A2B /* beyond_the_mountains.ttf in Resources */,
 				9090C8C1214F36D6007C07E9 /* Merriweather-Black.ttf in Resources */,
-				90CA29032132117300279A2B /* Read Me.rtf in Resources */,
 				9090C8E4214F3700007C07E9 /* OFL.txt in Resources */,
 				9090C8D7214F3700007C07E9 /* Montserrat-LightItalic.ttf in Resources */,
 				9090C8E7214F3700007C07E9 /* Montserrat-Italic.ttf in Resources */,
@@ -462,12 +421,9 @@
 				9090C8D8214F3700007C07E9 /* Montserrat-Medium.ttf in Resources */,
 				9090C8DD214F3700007C07E9 /* Montserrat-Thin.ttf in Resources */,
 				9090C8BF214F36D6007C07E9 /* OFL.txt in Resources */,
-				900CCE622147434B00D20C3E /* TableViewCell.xib in Resources */,
-				90CA29002132117300279A2B /* beyond_the_mountains.otf in Resources */,
 				90CA28D32131CD6200279A2B /* Main.storyboard in Resources */,
 				9090C8E6214F3700007C07E9 /* Montserrat-Regular.ttf in Resources */,
 				9090C8E3214F3700007C07E9 /* Montserrat-ExtraBold.ttf in Resources */,
-				90CA29022132117300279A2B /* beyond_the_mountains.png in Resources */,
 				9090C8DC214F3700007C07E9 /* Montserrat-ExtraLight.ttf in Resources */,
 				9090C8AC214DA862007C07E9 /* TripTableViewCell.xib in Resources */,
 				9090C8E1214F3700007C07E9 /* Montserrat-SemiBold.ttf in Resources */,
@@ -607,8 +563,8 @@
 				9090C8F0214F3A94007C07E9 /* Place.swift in Sources */,
 				90CA28CE2131CD6200279A2B /* AppDelegate.swift in Sources */,
 				90CA2907213212AF00279A2B /* IBDesignable.swift in Sources */,
+				90DEB07821507DA0005B4EA9 /* DiscoverTableViewController.swift in Sources */,
 				90CA28F92132100000279A2B /* InitialViewController.swift in Sources */,
-				900CCE612147434B00D20C3E /* TableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

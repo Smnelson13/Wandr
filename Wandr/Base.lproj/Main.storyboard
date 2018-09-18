@@ -13,7 +13,13 @@
         <array key="GillSans.ttc">
             <string>GillSans</string>
         </array>
-        <array key="beyond_the_mountains.ttf">
+        <array key="Merriweather-Regular.ttf">
+            <string>Merriweather-Regular</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="beyond_the_mountains.otf">
             <string>BeyondTheMountains</string>
         </array>
     </customFonts>
@@ -27,8 +33,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wandr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQi-14-bvq">
-                                <rect key="frame" x="124" y="94" width="126" height="45"/>
-                                <fontDescription key="fontDescription" name="BeyondTheMountains" family="Beyond The Mountains" pointSize="45"/>
+                                <rect key="frame" x="113.66666666666669" y="94" width="149" height="56.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Merriweather-Regular" family="Merriweather" pointSize="45"/>
                                 <color key="textColor" red="0.22352941179999999" green="0.23529411759999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -84,8 +90,8 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to your Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tq7-JT-ED4">
-                                <rect key="frame" x="98" y="144" width="178" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="87.666666666666671" y="155.66666666666666" width="198.66666666666663" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -257,7 +263,7 @@
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="35z-cT-f5L" kind="relationship" relationship="viewControllers" id="Toi-mQ-O83"/>
+                        <segue destination="roo-7V-piz" kind="relationship" relationship="viewControllers" id="Toi-mQ-O83"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QdX-xf-wFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -273,7 +279,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="133" id="7Er-bt-bq8" customClass="TripTableViewCell" customModule="Wandr" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TripCell" rowHeight="133" id="7Er-bt-bq8" customClass="TripTableViewCell" customModule="Wandr" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="133"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Er-bt-bq8" id="eIC-uT-b59">
@@ -287,11 +293,39 @@
                             <outlet property="delegate" destination="35z-cT-f5L" id="ySx-yD-rsW"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="" image="map" id="BUW-vT-h00"/>
+                    <navigationItem key="navigationItem" id="igY-sI-osG"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rez-SD-1d5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="cD1-v2-nYu" customClass="RAMLeftRotationAnimation" customModule="RAMAnimatedTabBarController"/>
             </objects>
-            <point key="canvasLocation" x="-63.200000000000003" y="-582.26600985221683"/>
+            <point key="canvasLocation" x="774" y="-591"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="deY-qM-TrS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="roo-7V-piz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="map" id="BUW-vT-h00" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="cD1-v2-nYu" id="ZU7-Wf-ujm"/>
+                        </connections>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Obj-Hz-FHN">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Merriweather-Regular" family="Merriweather" pointSize="24"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="35z-cT-f5L" kind="relationship" relationship="rootViewController" id="giN-P7-rLe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zki-8d-1XG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="-591"/>
         </scene>
     </scenes>
     <resources>

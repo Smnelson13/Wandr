@@ -9,25 +9,24 @@
 import UIKit
 
 class TripTableViewController: UITableViewController {
-
+    
+    let searchController = UISearchController(searchResultsController: nil)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupSearchController()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return 3
     }
 
@@ -35,11 +34,34 @@ class TripTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TripCell", for: indexPath) as! TripTableViewCell
         
-        cell.placeNameLabel.text = "Iceland"
-        cell.placeDetailLabel.text = "Some place far far away that would be totally dope if you went there."
-        
+
         return cell
     }
 
 
+}
+
+extension TripTableViewController: UISearchResultsUpdating, UISearchBarDelegate {
+    
+    func setupSearchController() {
+        let cancelButtonAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        UIBarButtonItem.appearance().setTitleTextAttributes(cancelButtonAttributes , for: .normal)
+        searchController.searchBar.tintColor = UIColor.black
+        searchController.searchBar.backgroundColor = UIColor.black
+        searchController.searchBar.barTintColor = UIColor.black
+        tableView.tableHeaderView = searchController.searchBar
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        searchController.searchBar.delegate = self
+    }
+
+    func searchBarIsEmpty() -> Bool {
+        // Returns true if the text is empty or nil
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        //filterContentForSearchText(searchController.searchBar.text!)
+    }
 }

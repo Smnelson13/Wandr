@@ -13,6 +13,7 @@ class TripTableViewCell: UITableViewCell {
     @IBOutlet weak var placeNameLabel: UILabel!
     @IBOutlet weak var placeDetailLabel: UILabel!
     @IBOutlet weak var placeImageView: UIImageView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

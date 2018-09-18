@@ -53,7 +53,7 @@
                 <outlet property="placeImageView" destination="b6O-rK-1sU" id="rIO-2X-sUo"/>
                 <outlet property="placeNameLabel" destination="FpF-SX-VVz" id="tyH-Rw-6Vz"/>
             </connections>
-            <point key="canvasLocation" x="34" y="123"/>
+            <point key="canvasLocation" x="33.5" y="122.5"/>
         </tableViewCell>
     </objects>
 </document>
